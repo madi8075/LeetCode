@@ -62,7 +62,7 @@ public class romanToInt {
 		answer = romanToInt("MCMXCIV");
 		System.out.printf("%d", answer);
 
-		// Passed this LeetCode problem with a 5ms runtime!
+		// Passed this LeetCode problem with a 5ms runtime and great memory usage!
 		// Could have done slightly better iterating backwards in the string...
 	}
 }
