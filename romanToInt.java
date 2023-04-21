@@ -1,6 +1,6 @@
 // Madison Manuel
 // 4/20/23
-// LeetCode problem "Romans to Int", Difficulty: Easy
+// LeetCode problem "Roman to Integer", Difficulty: Easy
 
 import java.util.*;
 import java.io.*;
