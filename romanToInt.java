@@ -9,40 +9,40 @@ public class romanToInt {
     public static int romanToInt(String s) {
         int sum = 0;
         char current;
-        int value = 0;
-		ArrayList<Integer> nums = new ArrayList<>();
+	ArrayList<Integer> nums = new ArrayList<>();
+
         for (int i = 0; i < s.length(); i++)
         {
             current = s.charAt(i);
             switch (current)
             {
                 case 'I':
-                    nums.add(1);
-					break;
+                	nums.add(1);
+			break;
                 case 'V':
-				nums.add(5);
-					break;
+			nums.add(5);
+			break;
                 case 'X':
-					nums.add(10);
-					break;
+			nums.add(10);
+			break;
                 case 'L':
-					nums.add(50);
-					break;
+			nums.add(50);
+			break;
                 case 'C':
-					nums.add(100);
-					break;
+			nums.add(100);
+			break;
                 case 'D':
-					nums.add(500);
-					break;
+			nums.add(500);
+			break;
                 case 'M':
-					nums.add(1000);
-					break;
+			nums.add(1000);
+			break;
             }
-		}
-		for(int j = 0; j < s.length(); j++)
+	}
+		for (int j = 0; j < s.length(); j++)
 		{
-			if(j != (s.length() - 1))
-				if(nums.get(j) < nums.get(j + 1))
+			if (j != (s.length() - 1))
+				if (nums.get(j) < nums.get(j + 1))
 				{
 					sum -= nums.get(j);
 					continue;
@@ -53,6 +53,7 @@ public class romanToInt {
         return sum;
     }
 
+	// This main was used to test the first 3 test cases before submitting
 	public static void main(String args[])
 	{
 		int answer = romanToInt("III");
